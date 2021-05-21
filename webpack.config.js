@@ -19,6 +19,7 @@ const rulesForCSS = {
         postcssOptions:{
           ident: 'postcss',
           plugins:[
+            require('tailwindcss'),
             require('autoprefixer')
           ]
         }
@@ -47,7 +48,15 @@ const rulesForJavascript = {
     ]
   }
 }
-const rules = [rulesForJavascript, rulesForCSS]
+const rulesForFiles = {
+  test: /\.(png|jpe?g|gif)$/i,
+  use: [
+    {
+      loader: 'file-loader',
+    },
+  ]
+}
+const rules = [rulesForJavascript, rulesForCSS, rulesForFiles]
 
 /* PLUGINS */
 
