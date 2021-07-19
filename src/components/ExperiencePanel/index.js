@@ -1,3 +1,4 @@
+import Stack from "../Stack";
 
 const ExperiencePanel = (props) =>{
   
@@ -11,15 +12,7 @@ const ExperiencePanel = (props) =>{
       <li>Ealico's product is now more competitive and user-friendly, which has increased customer satisfaction. </li>
       <li>Plus, I was in charge of developing their main website from start to finish.</li>
     </ul>
-    <ul className="flex space-x-4 ">
-      <li>Jinja templates</li>
-      <li>Scss & BEM</li>
-      <li>Webpack</li>
-      <li>Vanilla Js</li>
-      <li>Django</li>
-      <li>Postgress</li>
-      <li>Wagtail</li>
-    </ul>
+    <Stack/>
     
 
 

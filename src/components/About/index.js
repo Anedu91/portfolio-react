@@ -13,10 +13,10 @@ const About = () => {
     "mt-10 | grid grid-cols-3 gap-32 | items-center"
   )
 
-  const [knowledgeClick, setKnowledgeClick] = useState('');
+  const [knowledgeClick, setKnowledgeClick] = useState('ealico');
   
   return(
-    <div className="px-24">
+    <>
       <h2 className="text-primary text-mono text-6xl font-semibold"><span className="text-gray-400">01</span> About me</h2>
       
       <div className={containerStyle}>
@@ -28,7 +28,7 @@ const About = () => {
         <ExperienceList list={knowledgeList} upState={setKnowledgeClick}/>
 
       </div>
-    </div>    
+    </>    
   )
 }
 

@@ -1,4 +1,4 @@
-import aboutPhoto from "./Angel.JPG";
+import aboutPhoto from "./about.jpg";
 const AboutMe = () => {
   return(
     <div className="grid grid-cols-2 gap-32 | items-center">
